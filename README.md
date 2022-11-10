@@ -4,16 +4,16 @@ This project is aiming to solve multiple vehicle routing problems.
 
 ## Introduction
 
-This project implemented SIPP algorithm to plan the path for multiple vehicle in a grid-fashion map.
+This project implemented SIPP algorithm to plan the paths for multiple vehicles in a grid-fashion map.
 Originally, SIPP solve the routing once at a time. To get the plan for multiple
-vehicles, the algorithm need to call in a sequential fashion. In this way, the
-order of routing can be important. Right now, ordering the routing is out of the 
-scope of this project and may be considered in the future.
+vehicles, the algorithm need to be called in a sequential fashion. In this way, the
+order of routing can be important. However, ordering the routing(deciding which vehicle to plan first) 
+is out of the scope of this project and may be considered in the future.
 
 ## Easy run
 
 To use the SIPP algo just follow the example code in [sippExample.py](/sippExample.py).
-There are several setting can be used to configure the planner.
+There are several settings can be used to configure the planner.
 
 - [SAFE_DURATION](/sipp/constants.py): The time need to wait until a position can be defined as totally available (Default=0). 
 For example, after a vehicle left position (0, 0), this position need to be locked down for SAFE_DURATION
