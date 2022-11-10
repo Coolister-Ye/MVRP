@@ -32,16 +32,11 @@ To plot the result, can use the code in [graphPlot.py](/sipp/graphPlot.py).
 There are several cases showed below, which demonstrate the difference between 0 and 1 SAFE_DURATION setting, 
 complex situation/map like single plank.
 
-- SAFE_DURATION
-
 | SAFE_DURATION==0           | SAFE_DURATION==1           |
 |----------------------------|----------------------------|
 | ![0](/pic/svrp_0_safe.gif) | ![1](/pic/svrp_1_safe.gif) |
 
-- Single Plank
 
-![0](/pic/svrp_sp_1_safe.gif)
-
-- Multiple Vehicle Routing
-
-![0](/pic/mvrp_1_safe.gif)
+| Single Plank                  | Multiple Vehicle Routing    |
+|-------------------------------|-----------------------------|
+| ![0](/pic/svrp_sp_1_safe.gif) | ![1](/pic/mvrp_1_safe.gif)  |

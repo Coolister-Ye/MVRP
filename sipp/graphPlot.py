@@ -61,13 +61,13 @@ class GraphPlot(object):
                 annotate.set_position(pos)
             return (agv_img,*annotate_img,)
 
-        ani = animation.FuncAnimation(fig, animate, repeat=False, frames=max_t, interval=800, blit=True)
+        ani = animation.FuncAnimation(fig, animate, repeat=True, frames=max_t, interval=800, blit=True, repeat_delay=2000)
         plt.grid()
 
         if save_gif_fn:
             if save_gif_fn.split('.')[-1] != 'gif':
                 raise ValueError('File must be gif format!!')
-            writer = animation.PillowWriter(fps=15, metadata=dict(artist='Me'), bitrate=1800)
+            writer = animation.PillowWriter(fps=5, metadata=dict(artist='Me'), bitrate=1800)
             ani.save(save_gif_fn, writer=writer)
         plt.show()
 

@@ -106,6 +106,7 @@ def runGraphSearchMulti():
             plotter = GraphPlot(config, {config.id: plan})
             plotter.draw('pic/mvrp_{}_safe.gif'.format(SAFE_DURATION))
 
+
 if __name__ == '__main__':
     # runGraphPlot()
     # runGraphSearch()
