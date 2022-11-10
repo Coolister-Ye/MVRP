@@ -25,6 +25,7 @@ seconds to avoid potential conflicts.
   - start: Start position
   - end: Goal position
   - id: Name of the routing vehicle
+  - start_t: Start timestamp (Default=0), if this value greater than 0, it means vehicle won't show up in the map until that timestamp 
 
 ## Results
 
